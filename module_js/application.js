@@ -7,9 +7,10 @@ import {contenuContent} from './contenuContent.js'// Le contenu de la page suiva
 
 /* l'élement de la page qui contiendra les éléments créés dynamiquement */
 let elmHeader = document.querySelector('.header')
-let elmContent = document.querySelector('.content');
-let intro = new Introduction(contenuIntro, elmHeader, animationLettre)
-let content = new Content(contenuContent, elmContent, animationContent);
+let elmSection = document.querySelector('.content');
+let intro = new Introduction(contenuIntro, elmHeader, animationLettre);
+let content = new Introduction(contenuContent, elmSection, animationContent);
+
 
 // debutQuestionnaire()
 

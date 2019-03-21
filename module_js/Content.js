@@ -6,16 +6,17 @@ import {
 export class Content {
 
     /**
-     * Classe permettant de créer et d'animer une section contenant du text
-     * @param {object} o - contient l'ensemble des mots d'intro
+     * Classe permettant de créer et d'animer 
+     * @param {object} o - contient l'ensemble des mots 
      * @param {DOMElement} elementParent - Conteneur de l'animation
-     * @param {function} fonction - l'adresse de la fonction à exécuter après l'animation   
+     * @param {function} fonction - l'adresse de la fonction à exécuter après l'animation
+         
      }}
      */
 
     constructor(o, elementParent, fonction) {
         //Récupérer les valeurs passées en paramètre			
-        this.titrePrincipal = o.titrePrincipal;
+        this.texteContent = o.texteContent;
         this.elmParent = elementParent
         this.integrerContent()
         this.fonction = fonction
@@ -26,15 +27,16 @@ export class Content {
         /* Création des élément DOM qui seront animés. 
         Les éléments seront intégré dans le conteneur elmParent
         */
-        console.log('introduction')
-        let elmSecondaire = this.creerElement(elmConteneur,
-            'div',
-            this.titreSecondaire,
-            'rectangle')
+        console.log('content')
+        let elmConteneur = this.creerElement(this.elmParent,
+            'section',
+            '',
+            'content')
 
-        /* On garde une référence sur la fonction terminerIntro */
-        let refTerminerIntro = this.terminerIntro.bind(this)
-        elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this))
+        let elmPrimaire = this.creerElement(elmConteneur,
+            'div',
+            this.texteContent,
+            'rectangle')
     }
 
     creerElement(elmParent, balise, contenu, classCSS) {
@@ -52,8 +54,8 @@ export class Content {
         return noeud
     }
 
-    terminerIntro(evt) {
-        this.elmParent.firstChild.classList.add('deplacementContenuIntro')
+    terminerContent(evt) {
+        this.elmParent.firstChild.classList.add('deplacementContenuContent')
         this.elmParent.firstChild.addEventListener('animationend', this.passerVersAnimationSuivante.bind(this))
     }
 
