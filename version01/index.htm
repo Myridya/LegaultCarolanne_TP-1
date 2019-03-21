@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Carolanne Legault : Travail Pratique 1- Veille technologique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+
+    <input type="checkbox" id="chkBoutonBurger" />
+    <label for="chkBoutonBurger" class="boutonBurger"></label>
+    
+    <div class="global">
+        <nav class="menu">
+            <a href="#">BOUTON 1</a>
+            <a href="#">BOUTON 2</a>
+            <a href="#">BOUTON 3</a>
+            <a href="#">BOUTON 4</a>
+        </nav> <!-- Fin de menu -->
+
+        <div class="wrapper">
+            <div class="box header">Header
+                <br/> ajout d'un sous-titre
+            </div>
+
+            <div class="box sidebar">Sidebar</div>
+            
+            <div class="box sidebar2">Sidebar 2
+                <div class="a">A</div>
+                <div class="b">B</div>
+                <div class="c">C</div>
+            </div>
+
+            <div class="box content">Content
+                <br /> More content than we had before so this column is now quite tall.
+                <br /> Want more? ....
+            </div>
+        
+            <div class="box footer">Footer</div>
+        
+        </div> <!-- Fin de wrapper-->
+
+    </div> <!-- Fin de global-->
+
+    <script>
+        /* Permet de contrôler l'aspect de la case à cocher au clic sur les boutons
+        */
+            (function() { //IIFE
+                var leCheckBox = document.querySelector("input");
+                var lesBoutons = document.querySelectorAll(".menu a");
+                var nbBoutons = lesBoutons.length;		
+                console.log(nbBoutons);
+                
+                for (var i = 0; i < nbBoutons; i++) {
+                    lesBoutons[i].addEventListener("click", function() {
+                        console.log(leCheckBox.checked);
+                        leCheckBox.checked = false;
+                    }, false);
+                }
+            })(); //Fin IIFE
+    </script>
+
+</body>
+</html>
+

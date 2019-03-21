@@ -1,0 +1,212 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 87.5%;
+}
+
+body {
+	display :  flex;
+	flex-direction: column;
+	font-family: 'Fontdiner Swanky', cursive;   
+/* 	font-family: cursive; */
+	width :  100vw;
+	height : 100vh;
+	background-image: url("../images/perenoel2.jpg");
+	background-size: cover;
+	background-blend-mode: lighten;
+}
+
+
+header {
+	display :  flex;
+	flex-direction :  column;
+	justify-content: space-between;
+	align-items: center;
+	height :  23vh;
+	color : #CC231E;
+}
+
+header h1 {
+	font-size: 1.8em;
+
+	display : flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+}
+header h2 {
+	font-size: 1.5em;
+
+	display : flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+section{
+	display : flex;
+	flex-direction: column;
+	height: auto;
+	justify-content: space-around;
+	align-items: center;
+	flex:  1;
+	overflow: hidden;
+}
+
+
+
+.mot {
+	display : flex;
+
+
+	
+}
+.mot > div{
+	font-size: 3em;
+	text-shadow: 6px 2px 6px rgba(0, 0, 0, 0.7);
+
+
+}
+
+
+.mot:nth-child(1) > div {
+	animation: animationLettre 1s both;
+}
+
+
+
+
+@keyframes animationLettre{
+	from {
+		/* opacity:  0; */
+		transform: translateX(-75vw) rotate(180deg) scale(1);
+		animation-timing-function: cubic-bezier(.8, .01, .97, .19);
+	}
+
+	50% {
+		/* opacity:  .5; */
+		transform: translateX(30vw) rotate(180deg) scale(1.5);
+		animation-timing-function: cubic-bezier(.09, .25, .19, 1.01);
+	}
+
+	to {
+		/* opacity:  1; */
+		transform: translateX(0%) rotate(0deg) scale(1);
+	}
+
+}
+
+/* ============================================================================== */
+/* Animation de Noël */
+
+
+.mot:nth-child(2) > div {
+	opacity: 0;
+}
+
+@keyframes animationLettreNoel {
+
+	from
+	 {
+		opacity: 0;
+		transform: scale(0.1) ;
+	}
+
+	25% {
+		opacity: .5;
+		transform: scale(1);
+	}
+
+	50%,
+	75% {
+		opacity: 1;
+		transform: scale(2) ;
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1) ;	
+	}
+}
+
+
+.animNoel {
+	/*animation*/
+	animation: animationLettreNoel 1.5s infinite;
+	transform: scale(0);
+}
+/* ==================================================================== */
+/*
+ animation de glissement à droite
+*/
+/*
+.glissementDroite {
+	animation : glissementDroite 2s forwards ;
+}
+
+
+@keyframes glissementDroite {
+	from{ transform:  translateX(0) scale(1) }
+
+	to {
+		transform:  translateX(100vw) scale(0) ;
+	}
+}
+
+*/
+
+/*	 À COMPLÉTER
+	===================================================== */
+
+/* Délai cumulatif de 1s pour les 2,3,et 4e lettre du mot NOËL */
+
+.animNoel:nth-child(2) {
+	animation-delay: .5s;
+}
+
+.animNoel:nth-child(3) {
+	animation-delay: 1s;
+}
+
+.animNoel:nth-child(4) {
+	animation-delay: 1.5s;
+}
+
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	transition: letter-spacing 0.5s, color 0.5s;
+	color : #CC231E;
+}
+
+footer:hover  {
+	letter-spacing :  .5em;	
+	color: #F5624D;
+}
+
+
+@media screen and (min-width: 992px) {
+
+	html {
+	font-size: 100%;
+}
+
+.mot > div {
+	font-size: 6em;
+}
+footer:hover  {
+	letter-spacing :  1em;	
+	color: #F5624D;
+}
+
+
+
+}
