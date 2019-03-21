@@ -18,6 +18,11 @@ function animationLettre()
  	let  monAnimLettre = new AnimLettre(lesLettres, elmHeader, finAnim)	
 }
 
+function AnimationLigne()
+{
+	let nomAnimLigne = new AnimLigne();
+}
+
 
 function finAnim()
 {
