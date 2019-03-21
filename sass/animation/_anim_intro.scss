@@ -6,7 +6,7 @@
 }
 
 .rectangle {
-    // font-size: 1em;
+    // font-size: 1em; 
   
     min-height: 2em;
     width: 50%;
@@ -28,12 +28,12 @@
 }
 
 .rectangle:nth-child(1) {
-    background-color: #e54792;
+    background-color: #592da9;
     animation: anim1 0.5s; 
 }
 
 .rectangle:nth-child(2) {
-    background-color: #592da9;
+    background-color: #0e061f;
     animation: anim2 0.5s 0.5s backwards;
 }
 

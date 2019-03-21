@@ -112,11 +112,6 @@ body {
 	.conteneur {
 
 		grid-template-columns: 20% auto;
-		grid-template-areas:
-			"header   header"
-			"sidebar  content"
-			"sidebar2 sidebar2"
-			"footer   footer";
 
 		min-width: 500px;
 	}
@@ -137,7 +132,7 @@ body {
 
 	.menu {
 		/*Propriété comme item flex - ne peut s'étirer en hauteur*/
-		width: 96vw;
+		width: 96vw; 
 		margin-bottom: 10px;
 		border-radius : 10px;
 		flex: 0 0 100%;
@@ -158,15 +153,11 @@ body {
 			}
 		 }	
 
-	}
+	} 
 
 	.conteneur {
 		grid-gap: 20px;
 		grid-template-columns: 120px auto 120px;
-		grid-template-areas:
-			"header  header  header"
-			"sidebar content sidebar2"
-			"footer  footer  footer";
 		max-width: 100%;
 	}
 }
