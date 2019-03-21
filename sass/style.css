@@ -757,19 +757,19 @@ body {
 }
 
 .rectangle:nth-child(2) {
-  background-color: #f59723;
+  background-color: #592da9;
   -webkit-animation: anim2 0.5s 0.5s backwards;
           animation: anim2 0.5s 0.5s backwards;
 }
 
 .rectangle:nth-child(3) {
-  background-color: #58b34c;
+  background-color: #592da9;
   -webkit-animation: anim3 0.5s 1s backwards;
           animation: anim3 0.5s 1s backwards;
 }
 
 .rectangle:nth-child(4) {
-  background-color: #006d98;
+  background-color: #592da9;
   font-size: 1em;
   /* max-height : 20vh;*/
   -webkit-animation: animGo 1s 1.5s backwards;
