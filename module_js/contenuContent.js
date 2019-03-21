@@ -1,3 +1,0 @@
-export const contenuContent = {
-	texteContent : "Harry Potter Until the very end Of course it is happening inside your head Harry but why on earth should that mean it is not real How very irritating Just because you have the emotional range of a teaspoon doesnt mean we all have, Im not going to be murdered Harry said out loud  Thats the spirit dear said his mirror sleepily Always It is the unknown we fear when we look upon death and darkness nothing more Really Hagrid if you are holding out for universal popularity Im afraid you will be in this cabin for a very long time After all this time Theres no need to call me Sir Professor Severus Snape."
-}
