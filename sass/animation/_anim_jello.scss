@@ -12,6 +12,7 @@
   body {
     display: flex;
   }
+
   
   body, .container, .sentence {
     transform-style: preserve-3d;
@@ -27,7 +28,7 @@
   .sentence {
     margin: auto;
     font-size: 4em;
-    color: #f0f0f0;
+    color: #ff94d2;
     text-align: center;
     span {
       display: inline-block;

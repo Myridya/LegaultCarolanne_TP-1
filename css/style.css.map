@@ -17,7 +17,8 @@
         "../sass/layout/_layout.scss",
         "../sass/animation/_animation.scss",
         "../sass/animation/_anim_intro.scss",
-        "../sass/animation/_anim_lettre.scss"
+        "../sass/animation/_anim_lettre.scss",
+        "../sass/animation/_anim_jello.scss "
     ],
     "names": [],
     "file": "style.css"

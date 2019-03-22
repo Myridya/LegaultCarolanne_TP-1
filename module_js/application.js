@@ -8,7 +8,7 @@ import {AnimJello} from './AnimJello.js'
 let elmHeader = document.querySelector('.header')
 let elmContent = document.querySelector('.content')
 let intro = new Introduction(contenuIntro, elmHeader, animationLettre)
-let content = AnimJello();
+let content = new AnimJello()
 
 // debutQuestionnaire()
 
@@ -19,7 +19,6 @@ function animationLettre()
 	const lesLettres = 'Veille-technologique' // Elle reste toujours les même puisqu'elles ne sont jamais modifiées par l'animation
  	let  monAnimLettre = new AnimLettre(lesLettres, elmHeader, finAnim)	
 }
-
 
 
 function finAnim()
