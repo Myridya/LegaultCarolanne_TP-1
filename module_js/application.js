@@ -2,7 +2,7 @@
 import {contenuIntro} from './contenuIntro.js' // le contenu de l'intoduction */
 import {Introduction} from './Introduction.js' // 
 import {AnimLettre} from './AnimLettre.js' //
-import {AnimJello} from './AnimJello.js'
+import {AnimJello} from './AnimJello.js' //
 
 /* l'élement de la page qui contiendra les éléments créés dynamiquement */
 let elmHeader = document.querySelector('.header')
